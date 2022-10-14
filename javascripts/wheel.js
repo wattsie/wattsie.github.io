@@ -43,13 +43,13 @@ var mod = function (a, b) {
 };
 
 $(function () {
-  var studentContainer = $('#names ul');
-  names.forEach(function (student) {
-    var name = student.name;
-    studentContainer.append(
+  var nameContainer = $('#names ul');
+  names.forEach(function (name) {
+    var name = name.name;
+    nameContainer.append(
       $(document.createElement('li')).append(
         $(document.createElement('input')).attr({
-          id: 'student-' + name,
+          id: 'name-' + name,
           name: name,
           value: name,
           type: 'checkbox',
@@ -71,7 +71,7 @@ $(function () {
         })
       ).append(
         $(document.createElement('label')).attr({
-          'for': 'student-' + name
+          'for': 'name-' + name
         }).text(name)));
   });
 
