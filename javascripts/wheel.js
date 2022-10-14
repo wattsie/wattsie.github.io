@@ -101,7 +101,7 @@ var wheel = {
   centerX: 300,
   centerY: 300,
   colorCache: [],
-  downTime: 8000,
+  downTime: 9000,
   frames: 0,
   maxSpeed: Math.PI / 16,
   segments: [],
@@ -109,7 +109,7 @@ var wheel = {
   spinStart: 0,
   timerDelay: 33,
   timerHandle: 0,
-  upTime: 2000,
+  upTime: 1000,
 
   spin: function () {
     // Start the wheel only if it's not already spinning
