@@ -1,4 +1,4 @@
-var students = [
+var names = [
   { name: 'Ahmed E.' },
   { name: 'Andrew J.' },
   { name: 'Anthony E.' },
@@ -43,8 +43,8 @@ var mod = function (a, b) {
 };
 
 $(function () {
-  var studentContainer = $('#students ul');
-  students.forEach(function (student) {
+  var studentContainer = $('#names ul');
+  names.forEach(function (student) {
     var name = student.name;
     studentContainer.append(
       $(document.createElement('li')).append(
@@ -75,12 +75,12 @@ $(function () {
         }).text(name)));
   });
 
-  $('#students ul>li').tsort('input', {
+  $('#names ul>li').tsort('input', {
     attr: 'value'
   });
 
   var segments = [];
-  $.each($('#students input:checked'), function (key, cbox) {
+  $.each($('#names input:checked'), function (key, cbox) {
     segments.push(cbox.value);
   });
 
