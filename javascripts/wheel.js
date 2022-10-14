@@ -14,7 +14,7 @@ var students = [
   { name: 'Lawrence DS.' },
   { name: 'Mark G.' },
   { name: 'Matthew S.' },
-  { name: 'Michael B. },
+  { name: 'Michael B.' },
   { name: 'Nancy T.' },
   { name: 'Natalie R.' },
   { name: 'Pamela C.' },
