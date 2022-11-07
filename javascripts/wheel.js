@@ -306,7 +306,7 @@ var wheel = {
     }
     // Draw a center circle
     ctx.beginPath();
-    ctx.arc(centerX, centerY, 20, 0, PI2, false);
+    ctx.arc(centerX, centerY, 40, 0, PI2, false);
     ctx.closePath();
 
     ctx.fillStyle = '#ffffff';
@@ -322,6 +322,15 @@ var wheel = {
     ctx.lineWidth = 10;
     ctx.strokeStyle = '#000000';
     ctx.stroke();
+
+    // Now draw the winning name
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'middle';
+    ctx.fillStyle = '#000000';
+    ctx.font = '1em Arial';
+    ctx.fillText("Click2Spin", centerX - 34, centerY);
+    
+
   }
 };
 
