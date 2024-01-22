@@ -21,7 +21,6 @@ var names = [
   { name: 'Nick P.' },
   { name: 'Pamela C.' },
   { name: 'Shane W.' },
-  { name: 'Tim M.' },
   { name: 'YS W.' },
 ];
 
