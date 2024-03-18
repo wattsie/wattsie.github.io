@@ -96,6 +96,11 @@ $(function () {
   setTimeout(function () {
     window.scrollTo(0, 1);
   }, 0);
+
+
+  
+
+
 });
 
 var wheel = {
@@ -156,9 +161,39 @@ var wheel = {
       wheel.angleDelta = 0;
 
       $('#counter').html((wheel.frames / duration * 1000) + ' FPS');
+
+      const defaults = {
+        spread: 360,
+        ticks: 50,
+        gravity: 0,
+        decay: 0.94,
+        startVelocity: 30,
+        shapes: ["star"],
+        colors: ["FFE400", "FFBD00", "E89400", "FFCA6C", "FDFFB8"],
+      };
+      
+      function shoot() {
+        confetti({
+          ...defaults,
+          particleCount: 100,
+          scalar: 1.2,
+          shapes: ["star"],
+        });
+      
+        confetti({
+          ...defaults,
+          particleCount: 30,
+          scalar: 0.75,
+          shapes: ["circle"],
+        });
+      }
+      
+      setTimeout(shoot, 0);
+      setTimeout(shoot, 100);
+      setTimeout(shoot, 200);
+
     }
 
-    
      // Display RPM
      var rpm = (wheel.angleDelta * (1000 / wheel.timerDelay) * 60) / (Math.PI * 2);
      $('#counter').html( Math.round(rpm) + ' RPM' );
