@@ -10,7 +10,7 @@ var names = [
   { name: 'David J.' },
   { name: 'David R.' },
   { name: 'Inderpreet H.' },
-  { name: 'Indy B.' },
+  { name: 'Jack M.' },
   { name: 'Katie S.' },
   { name: 'Lawrence DS.' },
   { name: 'Mark S.' },
