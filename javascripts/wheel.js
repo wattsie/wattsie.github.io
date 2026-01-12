@@ -1,7 +1,9 @@
+//
+
 var names = [
   { name: 'Anthony E.' },
   { name: 'Brian F.' },
-  { name: 'Chris B.' },+
+  { name: 'Chris B.' },
   { name: 'Daniel G.' },
   { name: 'Danny L.' },
   { name: 'David J.' },
@@ -30,9 +32,9 @@ var hashCode = function (string) {
   // See http://www.cse.yorku.ca/~oz/hash.html
   var hash = 5381;
   for (i = 0; i < string.length; i++) {
-    var char = string.charCodeAt(i);
-    hash = ((hash << 5) + hash) + char;
-    hash = hash & hash; // Convert to 32bit integer
+    var char = string.charCodeAt(i)
+    hash = ((hash << 5) + hash) + char
+    hash = hash & hash // Convert to 32bit integer
   }
   return hash;
 };
@@ -45,7 +47,8 @@ $(function () {
   var nameContainer = $('#names ul');
   // names.sort();
   names.slice().sort( () => Math.random() - 0.5).forEach(function (name) {
-    var name = name.name;
+    var name = name.name
+    console.log(name)
     nameContainer.append(
       $(document.createElement('li')).append(
         $(document.createElement('input')).attr({
@@ -73,7 +76,7 @@ $(function () {
       ).append(
         $(document.createElement('label')).attr({
           'for': 'name-' + name
-        }).text(name)));
+        }).text(name)))
   });
 
   $('#names ul>li').tsort('input', {
@@ -82,16 +85,16 @@ $(function () {
 
   var segments = [];
   $.each($('#names input:checked'), function (key, cbox) {
-    segments.push(cbox.value);
+    segments.push(cbox.value)
   });
 
-  wheel.segments = segments;
-  wheel.init();
-  wheel.update();
+  wheel.segments = segments
+  wheel.init()
+  wheel.update()
 
   // Hide the address bar (for mobile devices)!
   setTimeout(function () {
-    window.scrollTo(0, 1);
+    window.scrollTo(0, 1)
   }, 0);
 
 
