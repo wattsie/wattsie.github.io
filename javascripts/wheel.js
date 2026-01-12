@@ -1,7 +1,4 @@
 var names = [
-  // { name: 'Ahmed E.' },
-  // { name: 'Elviz G.' },
-  // { name: 'Andrew J.' },
   { name: 'Anthony E.' },
   { name: 'Brian F.' },
   { name: 'Chris B.' },+
@@ -21,7 +18,7 @@ var names = [
   { name: 'Nick P.' },
   { name: 'Pamela C.' },
   { name: 'Shane W.' },
-  { name: 'YS W.' },
+  { name: 'YS W.' }
 ];
 
 var shuffle = function (o) {
