@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='chrome=1'>
+    <title>Next Presenter Wheel</title>
+    <link rel='stylesheet' href='/laugh/stylesheets/styles.css'>
+    <link rel='stylesheet' href='/laugh/stylesheets/github-light.css'>
+    <meta name='viewport' content='width=device-width'>
+  </head>
+  <body>
+    <div class='wrapper'>
+      <header>
+        <h1>Next Presenter Wheel</h1>
+        <p>Place your bets</p>
+        <p>Round and round we go, where we stop nobody knows...</p>
+        <br>
+        <i><p style="visibility:hidden;"><B>Note: </B>Current presenter should de-select their name from the list below, unless they would like a second chance!</p></i>
+      </header>
+      <section>
+        <div id='wheel' >
+          <canvas id='canvas' width='1000' height='600'></canvas>
+        </div>
+        <div id='names'>
+          <ul style="visibility:hidden;"></ul>
+        </div>
+        <div id='counter'></div>
+      </section>
+      <footer>
+        <p>This maintained by <a href='https://github.com/wattsie'>Wattsie</a></p>
+      </footer>
+    </div>
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'
+      crossorigin='anonymous'></script>
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.3.6/tinysort.min.js'
+      crossorigin='anonymous'></script>
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.3.6/jquery.tinysort.min.js'
+      crossorigin='anonymous'></script>
+    <script src='/laugh/javascripts/scale.fix.js'></script>
+    <script src='/laugh/javascripts/wheel.js'></script>    
+    <script src='/laugh/javascripts/tsparticles.min.js'></script>    
+  </body>
+</html>

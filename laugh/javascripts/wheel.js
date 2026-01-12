@@ -1,27 +1,15 @@
 var names = [
-  // { name: 'Ahmed E.' },
-  // { name: 'Elviz G.' },
-  // { name: 'Andrew J.' },
-  { name: 'Anthony E.' },
-  { name: 'Brian F.' },
-  { name: 'Chris B.' },+
-  { name: 'Daniel G.' },
-  { name: 'Danny L.' },
-  { name: 'David J.' },
   { name: 'David R.' },
-  { name: 'Inderpreet H.' },
-  { name: 'Jack M.' },
-  { name: 'Katie S.' },
-  { name: 'Lawrence DS.' },
-  { name: 'Mark S.' },
-  { name: 'Matthew S.' },
-  { name: 'Michael B.' },
-  { name: 'Nancy T.' },
-  { name: 'Naveed I.' },
-  { name: 'Nick P.' },
-  { name: 'Pamela C.' },
-  { name: 'Shane W.' },
-  { name: 'YS W.' },
+  { name: 'David R.' },
+  { name: 'David R.' },
+  { name: 'David R.' },
+  { name: 'David R.' },
+  { name: 'David R.' },
+  { name: 'David R.' },
+  { name: 'David R.' },
+  { name: 'David R.' },
+  { name: 'David R.' },
+
 ];
 
 var shuffle = function (o) {
